@@ -26,7 +26,6 @@ def start():
 
         try:
             online = search[0].spam.text
-            print(online)
             if (online in ['çevrimiçi', 'online']) and flag == False:
                 print('online')
                 msgtosend = messagelist[0]
@@ -37,7 +36,7 @@ def start():
                 print('offline')
                 flag = False
         except:
-            print('online')
+            print('offline')
             flag = False
 
         time.sleep(5)
